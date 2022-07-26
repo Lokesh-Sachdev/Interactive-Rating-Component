@@ -26,6 +26,7 @@ body {
   max-width: 300px;
   color: white;
   font-family: 'Overpass', sans-serif;
+  margin: 50px;
 }
 
 .star__img {
@@ -63,6 +64,7 @@ p {
   width: 40px;
   text-align: center;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .btn__rate:hover {
@@ -72,7 +74,7 @@ p {
 
 .btn__rate:active {
   background: orange;
-  opacity: white;
+  opacity: 1;
 }
 
 .btn__submit {
@@ -85,6 +87,7 @@ p {
   font-size: 13px;
   margin-top: 10px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .btn__submit:active {
@@ -98,11 +101,13 @@ p {
   background: hsl(213, 19%, 18%);
   border-radius: 20px;
   padding: 20px;
-  max-width: 270px;
+  max-width: 300px;
   color: white;
   font-family: 'Overpass', sans-serif;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .thank__img {
@@ -122,4 +127,13 @@ p {
 .text {
   text-align: center;
   font-size: 11px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background: hsl(219, 22%, 75%);
+  opacity: 1;
 }
